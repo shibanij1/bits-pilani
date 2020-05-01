@@ -1,0 +1,23 @@
+<html>
+        <head>
+
+            <script type="text/javascript">
+                function greet()
+                {
+                    var date =document.getElementById("date").value;
+                    var newdate=date.replaceAll("-","/");
+                    alert(date+"->"+newdate);
+                   
+                    }
+            </script>
+
+        </head>
+
+        <body>
+            <form onchange="greet();">
+                <label>Date( dd-mm-yyyy)<input type="date" id="date" size="5"/></label>
+            </form>
+
+        </body>
+
+    </html>
